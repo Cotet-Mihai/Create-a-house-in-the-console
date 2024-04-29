@@ -1,5 +1,4 @@
-﻿#include <iostream>
-#include "house.h"
+﻿#include "house.h"
 
 using namespace std;
 
@@ -83,7 +82,7 @@ void myTest() {
 
 
 	House house(size); // Create a House object with the specified size
-	house.Draw(); // Draw the initial house
+	cout << house; // Draw the initial house
 
 	cout << endl;
 	house.Summary(); // Display the summary of the initial house
@@ -114,7 +113,7 @@ void myTest() {
 		{
 		case (1):
 			house.Grow(); // Increase the size of the house
-			house.Draw(); // Redraw the house
+			cout << house; // Redraw the house
 
 			cout << endl;
 
@@ -125,7 +124,7 @@ void myTest() {
 
 		case (2):
 			house.Shrink(); // Decrease the size of the house
-			house.Draw(); // Redraw the house
+			cout << house; // Redraw the house
 
 			cout << endl;
 
@@ -141,7 +140,7 @@ void myTest() {
 			cin >> changeBorder;
 
 			house.SetBorder(changeBorder); // Change the border symbol of the house
-			house.Draw(); // Redraw the house
+			cout << house; // Redraw the house
 
 			cout << endl;
 
@@ -156,7 +155,7 @@ void myTest() {
 			cin >> changeFill;
 
 			house.SetFill(changeFill); // Change the interior symbol of the house
-			house.Draw(); // Redraw the house
+			cout << house; // Redraw the house
 
 			cout << endl;
 
@@ -197,11 +196,9 @@ void myTest() {
 }
 
 
-
 int main()
 {
 	myTest();
 		
 	return 0;
 }
-

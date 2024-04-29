@@ -1,4 +1,7 @@
+#pragma once
+
 #include <iostream>
+
 
 using namespace std;
 
@@ -10,12 +13,12 @@ private:
 
 public:
     // Constructor
-    House(int base, char border = 'X', char fill = '*') {
+    House(int base, char border = 'X', char fill = '*')
+        : _base((base <= 3) ? 3 : (base >= 30) ? 30 : base), // Initialize base size within range
+        _border(1, border), // Initialize border character
+        _fill(1, fill) // Initialize fill character
+    {
 
-        
-        _base = (base <= 3) ? 3 : (base >= 30) ? 30 : base; // Ensure base size is within range 3, 30
-        _border = border; // Initialize border character
-        _fill = fill; // Initialize fill character
     }
 
     // Get the base size of the house

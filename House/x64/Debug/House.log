@@ -1,5 +1,5 @@
 ﻿  House.cpp
-E:\2. Facultate\4. Programare orientata pe obiecte\House\House\house.h(28,65): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+E:\2. Facultate\4. Programare orientata pe obiecte\1. House\House\house.h(30,65): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'House.cpp')
   
-  House.vcxproj -> E:\2. Facultate\4. Programare orientata pe obiecte\House\x64\Debug\House.exe
+  House.vcxproj -> E:\2. Facultate\4. Programare orientata pe obiecte\1. House\x64\Debug\House.exe
